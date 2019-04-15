@@ -2,13 +2,13 @@ import isArray from 'lodash-es/isArray';
 import formatDate from '../utils/date/formatDate';
 import { getValidDate } from '../utils/date/helpers';
 import { ONE_DAY } from './constants';
-import { DateRangeQuickPickerValue } from './DateRangeQuickPicker';
+import { DatePickers } from '../datetimepicker/common/types';
 
 export function calculateTime(
   format: string,
   choosedItem,
   valueType
-): [DateRangeQuickPickerValue, DateRangeQuickPickerValue] {
+): DatePickers.RangeValue {
   let startTime;
   let endTime;
 
