@@ -36,19 +36,24 @@ $theme-success-1: #268d37 !default;
 $theme-success-2: #2da641 !default;
 $theme-success-3: #4cb35d !default;
 $theme-success-4: #66be74 !default;
-$theme-success-5: #f0faf2 !default;
+$theme-success-5: #9fd6a8 !default;
+$theme-success-6: #f0faf2 !default;
 
 // Red
 $theme-error-1: #b40000 !default;
 $theme-error-2: #d40000 !default;
 $theme-error-3: #da2626 !default;
 $theme-error-4: #df4545 !default;
-$theme-error-5: #ffebeb !default;
+$theme-error-5: #eb8b8b !default;
+$theme-error-6: #ffebeb !default;
 
 // Orange
-$theme-warn-1: #ed6a0c !default;
-$theme-warn-2: #f1924e !default;
-$theme-warn-3: #fff5ed !default;
+$theme-warn-1: #6c3106 !default;
+$theme-warn-2: #ad4e09 !default;
+$theme-warn-3: #ed6a0c !default;
+$theme-warn-4: #f1924e !default;
+$theme-warn-5: #f6bb90 !default;
+$theme-warn-6: #fff5ed !default;
 
 // Shadow
 $shadow-spec-focus: 0 0 4px 0 rgba($theme-primary-1, 0.2) !default;
@@ -95,6 +100,7 @@ $theme-colors: (
     $theme-success-3,
     $theme-success-4,
     $theme-success-5,
+    $theme-success-6,
   ),
   'error': (
     $theme-error-1,
@@ -102,11 +108,15 @@ $theme-colors: (
     $theme-error-3,
     $theme-error-4,
     $theme-error-5,
+    $theme-error-6,
   ),
   'warn': (
     $theme-warn-1,
     $theme-warn-2,
     $theme-warn-3,
+    $theme-warn-4,
+    $theme-warn-5,
+    $theme-warn-6,
   ),
 );
 

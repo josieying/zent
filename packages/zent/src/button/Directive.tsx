@@ -19,6 +19,7 @@ export type IButtonType =
   | 'primary'
   | 'secondary'
   | 'danger'
+  | 'warning'
   | 'success';
 
 export type IButtonHtmlType = 'button' | 'submit' | 'reset';

@@ -27,6 +27,9 @@ $btn-danger-active: 1;
 $btn-success: 2;
 $btn-success-hover: 3;
 $btn-success-active: 1;
+$btn-warning: 3;
+$btn-warning-hover: 4;
+$btn-warning-active: 1;
 
 @mixin btn-primary($prop) {
   @include theme-color($prop, primary, $btn-primary);
@@ -252,7 +255,8 @@ $btn-success-active: 1;
     );
   }
 
-  &-danger {
+  &-danger,
+  &-error {
     @include btn-style(
       error,
       $btn-danger,
@@ -261,7 +265,8 @@ $btn-success-active: 1;
     );
   }
 
-  &-danger-outline {
+  &-danger-outline,
+  &-error-outline {
     @include btn-style-outline(
       error,
       $btn-danger,
@@ -274,8 +279,8 @@ $btn-success-active: 1;
     @include btn-style(
       success,
       $btn-success,
-      $btn-danger-hover,
-      $btn-danger-active
+      $btn-success-hover,
+      $btn-success-active
     );
   }
 
@@ -283,8 +288,26 @@ $btn-success-active: 1;
     @include btn-style-outline(
       success,
       $btn-success,
-      $btn-danger-hover,
-      $btn-danger-active
+      $btn-success-hover,
+      $btn-success-active
+    );
+  }
+
+  &-warning {
+    @include btn-style(
+      warn,
+      $btn-warning,
+      $btn-warning-hover,
+      $btn-warning-active
+    );
+  }
+
+  &-warning-outline {
+    @include btn-style-outline(
+      warn,
+      $btn-warning,
+      $btn-warning-hover,
+      $btn-warning-active
     );
   }
 
